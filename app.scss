@@ -1,0 +1,120 @@
+@import "config";
+
+
+.container-fluid{
+  background-image:linear-gradient($Softviolet,$Softblue) ;
+  height: 100vh
+}
+
+.container-b{
+   background-color: white;
+    height: 423px;
+    width: 690px;
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+     border-radius:25px ;
+}
+.support{
+  position: relative;
+  right: 165px;
+  bottom: 151px;
+}
+.outer-image{
+  height: 288px;
+  margin: 24px;
+  position: absolute;
+}
+.inner-image{
+  height: 244px;
+  position: absolute;
+}
+
+.inner-inner-image{
+  height: 110px;
+  position: absolute;
+  z-index:1 ;
+ top: 98px;
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.questions::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.questions {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.questions{
+  margin: -70px;
+  overflow: scroll;
+}
+
+h1{
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.p-tag{
+  display: inline;
+}
+
+.p1{
+  color: grey;
+}
+
+.red{
+  color:blue;
+}
+.rotate{
+  transform: rotate(180deg);
+}
+
+.p1:hover{
+  cursor: grab;
+}
+
+.p2{
+  color: grey;
+  display: none;
+}
+
+@media(max-width:720px){
+  .container-fluid{
+    md:720px;
+  }
+}
+
+@media (max-width: 668px) {
+  .container-fluid{
+    flex-direction:row;
+  }
+  .container-b{
+    height:600px;
+    width: 400px;
+    flex-direction: column;
+    overflow: visible;
+  }
+  .support{
+    background-image: url("images/illustration-woman-online-mobile.svg");
+  }
+  .outer-image{
+    height: 230px;
+    margin: 22px;
+  }
+  .inner-image{
+    height: 205px;
+  }
+  .inner-inner-image{
+    right: -91px;
+    height: 101px;
+    top: 81px;
+  }
+  
+}
+
+
+
